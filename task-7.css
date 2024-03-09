@@ -1,0 +1,116 @@
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #1B2473;
+}
+
+.wrapper form {
+  width: 600px;
+  padding: 26px 45px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+}
+
+h2, 
+.field-name, 
+.submit-button, 
+.agree-text,
+.form-item,
+input::placeholder {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  color: #787878;
+}
+
+h2 {
+  display: flex;
+  font-size: 50px;
+  line-height: 50px;
+  justify-content: center;
+  margin-top: 26px;
+}
+
+.field-name {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 8px;
+  margin-left: 12px;
+}
+
+.form-item {
+  width: 510px;
+  height: 50px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+  border: 2px solid #787878;
+}
+
+.form-item,
+input::placeholder {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.checkbox-container {
+  display: flex;
+  position: relative;
+}
+
+.agree-checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #787878;
+  border-radius: 7px;
+}
+
+.agree-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 6px;
+  padding-left: 10px;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button {
+  width: 180px;
+  height: 52px;
+  border-radius: 10px;
+  background-color: #1A226B;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 16px;
+  border-style: none;
+  margin: 50px auto;
+}
+
+.error {
+  display: block;
+  border-color: #ff0000;
+}
+
+.error-message {
+  color: #ff0000;
+  margin-top: -17px;
+  margin-left: 12px;
+  padding-bottom: 25px;
+} 
+
+#checkbox-error {
+  position: absolute;
+  padding-bottom: 0;
+  top: 50px;
+}

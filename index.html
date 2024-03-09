@@ -3,9 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Log in form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./task-7.css">
 </head>
+
 <body>
-  <script src="./task-6.js"></script>
+  <div class="wrapper">
+    <form action="" id="login-form">
+      <h2>Вход</h2>    
+      <div class="form-group">
+        <div class="field-name">Email</div>
+        <input type="email" id="email" class="form-item" name="email" placeholder="johndoe@email.com" required>
+        <div id="email-error" class="error"></div>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" class="form-item" name="password" placeholder="Введите пароль" required>
+        <div id="password-error" class="error"></div>
+      </div>
+      <div class="form-group">
+        <label for="agree-checkbox" class="checkbox-container">
+          <input type="checkbox" class="agree-checkbox" id="agree-checkbox">
+          <div id="checkbox-error" class="error"></div> 
+          <p class="agree-text">Я согласен получать обновления на почту</p>
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="form-group button-div">
+        <button type="submit" class="submit-button">Войти</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="./task-7.js"></script>
 </body>
+
 </html>
