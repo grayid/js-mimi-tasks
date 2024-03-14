@@ -29,12 +29,13 @@ a:active {
 
 body {
   position: relative;
-  background-image: url(./image/you-dont-know-js.jpg);
+  background-image: url(./image/open_book.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
 }
+
 
 h1, h2 {
   text-align: center;
@@ -74,10 +75,31 @@ h2>a{
   z-index: -1;
 }
 
+
 @-webkit-keyframes blink {
   100% { color: rgba(34, 34, 34, 0); }
 }
-
 @keyframes blink {
   100% { color: rgba(34, 34, 34, 0); }
 }
+
+.adv {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 10px;
+  width: 300px;
+  height: 200px;
+  background: #f8f8f8 url("./image/adv.jpg") no-repeat center top;
+  padding: 150px 0 0;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.adv span{
+  -webkit-animation: blink 1s linear infinite;
+  animation: blink 1s linear infinite;
+}
+
